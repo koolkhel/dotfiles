@@ -4,7 +4,7 @@ see https://www.atlassian.com/git/tutorials/dotfiles
 https://www.ackama.com/blog/posts/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained
 
 
-`git clone --bare https://github.com/koolkhel/dotfiles.git $HOME/.dotfiles`
+`git clone --bare git@github.com:koolkhel/dotfiles.git $HOME/.dotfiles`
 
 `alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'`
 
