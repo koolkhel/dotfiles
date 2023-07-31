@@ -1,7 +1,7 @@
 [Midnight-Commander]
 verbose=true
 shell_patterns=true
-auto_save_setup=false
+auto_save_setup=true
 preallocate_space=false
 auto_menu=false
 use_internal_view=true
@@ -62,10 +62,11 @@ editor_group_undo=false
 editor_state_full_filename=false
 editor_ask_filename_before_edit=false
 nice_rotating_dash=true
+shadows=true
 mcview_remember_file_position=false
 auto_fill_mkdir_name=true
 copymove_persistent_attr=true
-pause_after_run=1
+pause_after_run=0
 mouse_repeat_rate=100
 double_click_speed=250
 old_esc_mode_timeout=1000000
@@ -82,15 +83,11 @@ editor_backup_extension=~
 editor_filesize_threshold=64M
 editor_stop_format_chars=-+*\\,.;:&>
 mcview_eof=
-skin=mc46
-
-shadows=true
-
-filepos_max_saved_entries=1024
+skin=yadt256
 
 [Layout]
 output_lines=0
-left_panel_size=77
+left_panel_size=95
 top_panel_size=0
 message_visible=true
 keybar_visible=true
@@ -118,6 +115,10 @@ base_color=
 xterm-256color=
 color_terminals=
 
+xterm=
+
+xterm-kitty=
+
 [Panels]
 show_mini_info=true
 kilobyte_si=false
@@ -134,9 +135,9 @@ panel_scroll_pages=true
 panel_scroll_center=false
 mouse_move_pages=true
 filetype_mode=true
-permission_mode=false
+permission_mode=true
 torben_fj_mode=false
-quick_search_mode=0
+quick_search_mode=2
 select_flags=6
 
 simple_swap=false
