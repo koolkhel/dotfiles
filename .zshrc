@@ -121,8 +121,10 @@ if [ -f '/Users/bitterman/yandex-cloud/completion.zsh.inc' ]; then source '/User
 export HOMEBREW_NO_INSTALL_CLEANUP=1
 
 # fix for Midnight Commander
-if ps $PPID | grep mc; then
+if ps $PPID | grep mc > /dev/null; then
         # this removes git_prompt_string cool stuff but I have no other solution for now
-    PROMPT='%n@%m %~$ '
+    PROMPT="%n@%m:%~$ "
 fi
 
+alias ls='exa'
+alias less='bat'
