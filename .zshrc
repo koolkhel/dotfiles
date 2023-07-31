@@ -128,3 +128,7 @@ fi
 
 alias ls='exa'
 alias less='bat'
+alias ssh="kitty +kitten ssh"
+export BAT_PAGER='less -R'
+export VIEWER='bat --paging always'
+export EDITOR=vim
