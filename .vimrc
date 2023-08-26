@@ -134,8 +134,9 @@ augroup END
   set runtimepath+=$GOROOT/misc/vim
   filetype plugin indent on
   syntax on
+  set number
 
-colors blue  
+colors elflord
 
 set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 " gopass security

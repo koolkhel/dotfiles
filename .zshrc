@@ -123,12 +123,13 @@ export HOMEBREW_NO_INSTALL_CLEANUP=1
 # fix for Midnight Commander
 if ps $PPID | grep mc > /dev/null; then
         # this removes git_prompt_string cool stuff but I have no other solution for now
-    PROMPT="%n@%m:%~$ "
+    PROMPT="%~$ "
 fi
 
 alias ls='exa'
 alias less='bat'
-alias ssh="kitty +kitten ssh"
+alias s="kitty +kitten ssh"
 export BAT_PAGER='less -R'
 export VIEWER='bat --paging always'
 export EDITOR=vim
+___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
